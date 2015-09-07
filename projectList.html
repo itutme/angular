@@ -1,0 +1,26 @@
+<html ng-app="ProjectMgmt">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project Management System</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body ng-controller="ProjectCtrl">
+        <div class="container">
+            <h1 class="title text-center">List of Projects</h1>
+            <hr />
+            <div class="row" >
+                <label class="col-sm-4 control-label">Title : </label>
+                <label class="col-sm-8 control-label">{{project.title}}</label>
+                <label class="col-sm-4 control-label">Start Date : </label>
+                <label class="col-sm-8 control-label">{{project.startDate}}</label>
+                <label class="col-sm-4 control-label">End Date : </label>
+                <label class="col-sm-8 control-label">{{project.endDate}}</label>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="js/ProjectCtrl.js"></script>
+    </body>
+</html>
