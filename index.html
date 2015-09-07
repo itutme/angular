@@ -13,7 +13,7 @@
     <div class="container">
         <h1 class="title text-center">List of Projects</h1>
         <hr />
-        <div class="row">
+        <div class="row" ng-repeat="project in projects" style="border-bottom: 1px #CCC solid;margin-bottom: 10px;">
             <label class="col-sm-4 control-label">Title : </label>
             <label class="col-sm-8 control-label">{{project.title}}</label>
             <label class="col-sm-4 control-label">Start Date : </label>
