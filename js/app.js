@@ -1,0 +1,1 @@
+var PmApp = angular.module('ProjectMgmt', []);
