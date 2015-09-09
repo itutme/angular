@@ -19,27 +19,27 @@
                 <label class="col-sm-4 control-label">Password : </label>
                 <label class="col-sm-8 control-label">{{user.password}}</label>
             </div>
-            <form class="form-horizontal">
+            <form name ="user" class="form-horizontal" novalidate  ng-submit="addUser(user)">
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Username</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control"  placeholder="Username" ng-model="user.username">
+                        <input type="text" class="form-control"  placeholder="Username" ng-model="user.username" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label  class="col-sm-2 control-label">Email </label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control"  placeholder="Email Address" ng-model="user.email">
+                        <input type="email" class="form-control"  placeholder="Email Address" ng-model="user.email" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label  class="col-sm-2 control-label">Password</label>
                     <div class="col-sm-6">
-                        <input type="password" class="form-control"  placeholder="Password" ng-model="user.password">
+                        <input type="password" class="form-control"  placeholder="Password" ng-model="user.password" ng-minlength="5" required>
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <button class="btn btn-default pull-right" ng-click="addUser(user)">Add User</button>
+                    <button type="submit" class="btn btn-default pull-right">Add User</button>
                 </div>
             </form>
         </div>
