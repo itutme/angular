@@ -14,11 +14,13 @@
     <div class="container">
         <h1 class="title text-center">Add New Users</h1>
         <hr />
-        <div class="row" ng-repeat="user in users" style="border-bottom: 1px #CCC solid;margin-bottom: 10px;">
+        <div class="row" ng-repeat="user in users | orderBy:'user.username'" style="border-bottom: 1px #CCC solid;margin-bottom: 10px;">
+            <label class="col-sm-4 control-label">Full Name : </label>
+            <label class="col-sm-8 control-label">{{user.fullname | capitalize}}</label>
             <label class="col-sm-4 control-label">Username : </label>
-            <label class="col-sm-8 control-label">{{user.username}}</label>
+            <label class="col-sm-8 control-label">{{user.username | uppercase}}</label>
             <label class="col-sm-4 control-label">Email : </label>
-            <label class="col-sm-8 control-label">{{user.email}}</label>
+            <label class="col-sm-8 control-label">{{user.email | lowercase}}</label>
             <label class="col-sm-4 control-label">Password : </label>
             <label class="col-sm-8 control-label">{{user.password}}</label>
         </div>
