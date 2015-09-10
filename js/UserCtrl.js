@@ -3,7 +3,7 @@ PmApp.controller('UserCtrl', ['$scope', function ($scope) {
 
     $scope.addUser = function(user){
         if($scope.newUser.$valid === true){
-            var newUser = {'username':user.username,'email':user.email,'password':user.password};
+            var newUser = {'fullname':user.fullname,'username':user.username,'email':user.email,'password':user.password};
             $scope.users.push(newUser);
             $scope.user = "";
         }
