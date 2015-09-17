@@ -16,6 +16,8 @@
         <div class="row">
             <label class="col-sm-4 control-label">Title : </label>
             <label class="col-sm-8 control-label">{{project.title}}</label>
+            <label class="col-sm-4 control-label">Description : </label>
+            <label class="col-sm-8 control-label">{{project.description}}</label>
             <label class="col-sm-4 control-label">Start Date : </label>
             <label class="col-sm-8 control-label">{{project.startDate}}</label>
             <label class="col-sm-4 control-label">End Date : </label>
@@ -26,6 +28,12 @@
                 <label class="col-sm-2 control-label">Project Title</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" placeholder="Project Title" ng-model="project.title"> Changed {{count.title}} times.
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Description" ng-model="project.description"> Changed {{count.description}} times.
                 </div>
             </div>
             <div class="form-group">
