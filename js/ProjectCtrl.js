@@ -1,6 +1,6 @@
 var PmApp = angular.module('ProjectMgmt', []);
 PmApp.controller('ProjectCtrl', ['$scope', function ($scope) {
-     $scope.projects = [{'title':'Angular Tutorial', 'description':'Create fast-track Angular Tutorial ', 'startDate':'08/20/2015', 'endDate':'12/31/2015'},{'title':'Mobile App Development', 'description': 'Development of mobile App using Titanium', 'startDate':'08/02/2015', 'endDate':'02/31/2016'},{'title':'Angular web App', 'description':'Develop web app using AngularJs', 'startDate':'09/15/2015', 'endDate':'01/25/2016'}];
+     $scope.projects = [{'title':'angular tutorial', 'description':'Create fast-track Angular Tutorial ', 'startDate':'2015-08-20', 'endDate':'2015-12-31'},{'title':'mobile app development', 'description': 'Development of mobile App using Titanium', 'startDate':'2015-08-02', 'endDate':'2016-02-31'},{'title':'angular web app', 'description':'Develop web app using AngularJs', 'startDate':'2015-09-15', 'endDate':'2016-01-25'}];
 
     $scope.count = {'title':0, 'startDate':0, 'endDate':0};
     $scope.$watch("project.title", function(){
