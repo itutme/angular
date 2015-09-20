@@ -28,6 +28,7 @@ PmApp.controller('ProjectCtrl', ['$scope', function($scope) {
             $scope.projects.push(newproject);
             $scope.project = "";
             alert('validation success');
+            console.log($scope.projects);
         } else {
             alert('Invalid form');
         }

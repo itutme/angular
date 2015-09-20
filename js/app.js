@@ -1,1 +1,1 @@
-var PmApp = angular.module('ProjectMgmt', []);
+var PmApp = angular.module('ProjectMgmt', ['ngMessages']);
