@@ -17,7 +17,12 @@
             <div class="form-group">
                 <label class="col-sm-2 control-label">Project Id</label>
                 <div class="col-sm-6">
-                    <input type="number" class="form-control" name="projectId" placeholder="Project Id" ng-model="task.projectId" required>
+                    <select class="form-control" name="projectId"  ng-model="task.projectId" required>
+                        <option value="">Choose Project</option>
+                        <option value="1">Angular Tutorial</option>
+                        <option value="2">Titanium Tutorial</option>
+                        <option value="3">Angular App Developmetn</option>
+                    </select>
                     <div ng-messages="newTask.projectId.$error" class="pull-right" ng-show="newTask.$submitted || newTask.projectId.$touched">
                         <div ng-message="required" class="text-danger">This field is required !</div>
                         <div ng-message="number" class="text-danger">Accept number only !</div>
@@ -92,14 +97,19 @@
             <div class="form-group">
                 <label class="col-sm-2 control-label">Assign To</label>
                 <div class="col-sm-6">
-                    <input type="number" class="form-control" name="assignTo" placeholder="Assign To" ng-model="task.assignTo" required>
+                    <select class="form-control" name="assignTo" ng-model="task.assignTo" required>
+                        <option value="">Choose User</option>
+                        <option value="1">John Doe</option>
+                        <option value="2">Jane Doe</option>
+                        <option value="3">Foo Bar</option>
+                    </select>
                     <div ng-messages="newTask.assignTo.$error" class="pull-right" ng-show="newTask.$submitted || newTask.assignTo.$touched">
                         <div ng-message="required" class="text-danger">This field is required !</div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-8">
-                <button class="btn btn-default pull-right" ng-click="addTask(task)">Assign Task</button>
+                <button class="btn btn-default pull-right">Assign Task</button>
             </div>
         </form>
     </div>
