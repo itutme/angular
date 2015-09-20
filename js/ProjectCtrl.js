@@ -16,7 +16,6 @@ PmApp.controller('ProjectCtrl', ['$scope', function($scope) {
         'endDate': '2016-01-25'
     }];
 
-    $scope.projects = [];
     $scope.addProject = function(project) {
         if ($scope.newProject.$valid === true) {
             var newproject = {
